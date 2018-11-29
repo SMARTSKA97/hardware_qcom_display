@@ -1,4 +1,4 @@
-ifeq ($(TARGET_QCOM_DISPLAY_VARIANT),caf-msm8937)
+#ifeq ($(TARGET_QCOM_DISPLAY_VARIANT),caf-msm8937)
 
 sdm-libs := sdm/libs
 display-hals := include libqservice libqdutils $(sdm-libs)/utils $(sdm-libs)/core
@@ -25,4 +25,4 @@ ifneq ($(filter msm% apq%,$(TARGET_BOARD_PLATFORM)),)
     include $(call all-named-subdir-makefiles,$(display-hals))
 endif
 endif
-endif
+#endif
